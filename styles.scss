@@ -1,0 +1,172 @@
+body {
+  background: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  section {
+    margin-top: 3rem;
+    
+    .row {
+      margin: 0;
+    }
+
+    div#top-img {
+      position: relative;
+    }
+
+    a#popoverData {
+      border-radius: 1rem;
+      border: 1px solid rgb(72, 72, 72);
+      width: 10rem;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+
+  div#bottom-form {
+    padding: 0;
+  }
+  #bottom-form::before {
+    display: block;
+    content: "";
+    background: repeating-linear-gradient(
+      to right,
+      rgb(248, 179, 62),
+      rgb(248, 179, 62) 25px,
+      rgb(255, 255, 255) 20px,
+      rgb(255, 255, 255) 46px
+    );
+  }
+  #bottom-form::after {
+    content: "";
+    height: 1.2rem;
+    background: repeating-linear-gradient(
+      to right,
+      rgb(248, 179, 62),
+      rgb(248, 179, 62) 25px,
+      rgb(255, 255, 255) 20px,
+      rgb(255, 255, 255) 46px
+    );
+  }
+
+  form {
+    background-color: rgb(72, 72, 72);
+    padding: 2rem 0.5rem 3rem 0.5rem;
+    .form-control {
+      border-radius: 0;
+      color: rgb(80, 80, 80);
+      background-color: rgb(232, 232, 232);
+      font-size: 0.85rem;
+      padding: 0.5rem;
+    }
+    i {
+      position: absolute;
+      align-items: center;
+      font-size: 1.5rem;
+      color: rgb(248, 179, 62);
+    }
+    div.row {
+      margin-left: 0;
+    }
+
+    button.submit {
+      color: rgb(72, 72, 72);
+      font-weight: bold;
+      background-color: rgb(248, 179, 62);
+    }
+
+    .form-check-label,
+    a {
+      font-size: 0.85rem;
+      color: white;
+      #terms {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (min-width: 200px) {
+    section {
+      width: 100%;
+      margin-top: 0.95rem;
+
+      div#top-img {
+        background: url(img/Creative_mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 16rem;
+        width: auto;
+      }
+
+      a#popoverData {
+        display: none;
+      }
+
+      #bottom-form::before {
+        height: 0.5rem;
+        background: rgb(248, 179, 62);
+      }
+    }
+  }
+  @media screen and (min-width: 600px) {
+    section {
+      width: 80%;
+      margin-top: 1.5rem;
+
+      div#top-img {
+        background: url(img/Creative_mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        width: auto;
+
+        a#popoverData {
+          display: block;
+        }
+
+        #bottom-form::before {
+          background: rgb(248, 179, 62);
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 800px) {
+    section {
+      width: 58%;
+      div#top-img {
+        background: url(img/Crtv_desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        width: auto;
+
+        a#popoverData {
+          display: block;
+        }
+      }
+
+      form {
+        padding-bottom: 2rem;
+      }
+
+      #bottom-form::before {
+        height: 1.2rem;
+        background: repeating-linear-gradient(
+          to right,
+          rgb(248, 179, 62),
+          rgb(248, 179, 62) 25px,
+          rgb(255, 255, 255) 20px,
+          rgb(255, 255, 255) 46px
+        );
+      }
+
+      #bottom-form::after {
+        display: block;
+      }
+    }
+  }
+}
