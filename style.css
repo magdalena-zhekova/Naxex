@@ -1,136 +1,106 @@
 body {
   background: url(img/background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-}
-body section {
-  margin-top: 3rem;
-}
-body section .row {
-  margin: 0;
-}
-body section div#top-img {
-  position: relative;
-}
-body section a#popoverData {
-  border-radius: 1rem;
-  border: 1px solid #484848;
-  width: 10rem;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-body div#bottom-form {
-  padding: 0;
-}
-body #bottom-form::before {
-  display: block;
-  content: "";
-  background: repeating-linear-gradient(to right, #f8b33e, #f8b33e 25px, white 20px, white 46px);
-}
-body #bottom-form::after {
-  content: "";
-  height: 1.2rem;
-  background: repeating-linear-gradient(to right, #f8b33e, #f8b33e 25px, white 20px, white 46px);
-}
-body form {
-  background-color: #484848;
-  padding: 2rem 0.5rem 3rem 0.5rem;
-}
-body form .form-control {
-  border-radius: 0;
-  color: #505050;
-  background-color: #e8e8e8;
-  font-size: 0.85rem;
-  padding: 0.5rem;
-}
-body form i {
-  position: absolute;
-  align-items: center;
-  font-size: 1.5rem;
-  color: #f8b33e;
-}
-body form div.row {
-  margin-left: 0;
-}
-body form button.submit {
-  color: #484848;
-  font-weight: bold;
-  background-color: #f8b33e;
-}
-body form .form-check-label,
-body form a {
-  font-size: 0.85rem;
-  color: white;
-}
-body form .form-check-label #terms,
-body form a #terms {
-  text-decoration: underline;
-}
-@media screen and (min-width: 200px) {
+  background-size: cover; }
   body section {
-    width: 100%;
-    margin-top: 0.95rem;
-  }
-  body section div#top-img {
-    background: url(img/Creative_mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 16rem;
-    width: auto;
-  }
-  body section a#popoverData {
-    display: none;
-  }
-  body section #bottom-form::before {
-    height: 0.5rem;
-    background: #f8b33e;
-  }
-}
-@media screen and (min-width: 600px) {
-  body section {
-    width: 80%;
-    margin-top: 1.5rem;
-  }
-  body section div#top-img {
-    background: url(img/Creative_mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    width: auto;
-  }
-  body section div#top-img a#popoverData {
-    display: block;
-  }
-  body section div#top-img #bottom-form::before {
-    background: #f8b33e;
-  }
-}
-@media screen and (min-width: 800px) {
-  body section {
-    width: 58%;
-  }
-  body section div#top-img {
-    background: url(img/Crtv_desktop.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    width: auto;
-  }
-  body section div#top-img a#popoverData {
-    display: block;
-  }
-  body section form {
-    padding-bottom: 2rem;
-  }
-  body section #bottom-form::before {
-    height: 1.2rem;
-    background: repeating-linear-gradient(to right, #f8b33e, #f8b33e 25px, white 20px, white 46px);
-  }
-  body section #bottom-form::after {
-    display: block;
-  }
-}
+    margin-top: 3rem; }
+    body section .row {
+      margin: 0; }
+    body section div#top-img {
+      position: relative; }
+    body section a#popoverData {
+      border-radius: 1rem;
+      border: 1px solid #484848;
+      width: 10rem;
+      position: absolute;
+      right: 20px;
+      bottom: 20px; }
+  body div#bottom-form {
+    padding: 4rem 0;
+    background: repeating-linear-gradient(to right, #f8b33e, #f8b33e 25px, white 20px, white 46px); }
+  body form {
+    background-color: #484848;
+    padding: 2rem 0.5rem 3rem 0.5rem; }
+    body form .code {
+      padding-right: 0.1rem; }
+    body form .phone {
+      padding-left: 0.2rem; }
+    body form .form-control {
+      border-radius: 0;
+      color: #505050;
+      background-color: #e8e8e8;
+      font-size: 0.82rem;
+      padding: 0.5rem; }
+    body form i {
+      position: absolute;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #f8b33e; }
+    body form div.row {
+      margin-left: 0; }
+    body form button.submit {
+      position: relative;
+      color: #484848;
+      font-weight: bolder;
+      font-size: 1.4rem;
+      background-color: #f8b33e; }
+      body form button.submit .fas {
+        font-size: 2rem; }
+    body form .form-check-label,
+    body form a {
+      font-size: 0.85rem;
+      color: white; }
+      body form .form-check-label #terms,
+      body form a #terms {
+        text-decoration: underline; }
+  @media screen and (min-width: 200px) {
+    body section {
+      width: 100%;
+      margin-top: 0.95rem; }
+      body section div#top-img {
+        background: url(img/Creative_mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 17rem;
+        width: auto; }
+      body section a#popoverData {
+        display: none; }
+      body section #bottom-form {
+        padding: 1rem 0 0 0;
+        background: #f8b33e; } }
+  @media screen and (min-width: 600px) {
+    body section {
+      width: 80%;
+      margin-top: 1.5rem; }
+      body section div#top-img {
+        background: url(img/Crtv_desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 20rem;
+        width: auto; }
+        body section div#top-img a#popoverData {
+          display: block; }
+        body section div#top-img #bottom-form {
+          padding: 1rem 0 0 0;
+          background: #f8b33e; } }
+  @media screen and (min-width: 800px) {
+    body section {
+      width: 58%; }
+      body section div#top-img {
+        background: url(img/Crtv_desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25rem;
+        width: auto; }
+        body section div#top-img a#popoverData {
+          display: block; }
+      body section form {
+        padding-bottom: 2rem; }
+      body section #bottom-form {
+        padding: 1.2rem 0 1.2rem 0;
+        background: repeating-linear-gradient(to right, #f8b33e, #f8b33e 25px, white 20px, white 46px); } }
+
+/*# sourceMappingURL=style.css.map */
